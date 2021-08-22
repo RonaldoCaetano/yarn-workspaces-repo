@@ -1,0 +1,14 @@
+{
+  "name": "yarn-docker-setup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "admin": "yarn workspace admin start",
+    "product": "yarn workspace product start",
+    "build:admin": "yarn workspace admin build",
+    "build:product": "yarn workspace product build"
+  }
+}
